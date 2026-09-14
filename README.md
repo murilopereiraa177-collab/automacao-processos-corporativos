@@ -58,6 +58,7 @@ Cadastro automático (Selenium + Flask)
 ▼
 Relatório final (Excel)
 
+
 ## Estrutura de pastas
 
 ProjetoRPA/
@@ -80,21 +81,28 @@ ProjetoRPA/
 ├── main.py # Ponto de entrada — executa o fluxo completo
 └── README.md
 
+
 ## Como instalar e configurar
 
 1. Clone o repositório e entre na pasta:
-git clone <url-do-repositorio>
-cd ProjetoRPA
+
+git clone https://github.com/murilopereiraa177-collab/automacao-processos-corporativos.git
+cd automacao-processos-corporativos
+
 
 2. Crie e ative um ambiente virtual:
+
 python -m venv venv
 venv\Scripts\activate
 
+
 3. Instale as dependências:
+
 pip install -r requirements.txt
 
 
 4. Copie o arquivo de exemplo de variáveis de ambiente e preencha com suas credenciais do MySQL:
+
 copy .env.example .env
 
 
@@ -105,12 +113,14 @@ copy .env.example .env
 O projeto precisa de dois processos rodando ao mesmo tempo, em terminais separados:
 
 **Terminal 1 — sistema interno simulado:**
+
 python -m webapp_demo.app
 
 
 **Terminal 2 — fluxo principal:**
 
 python -m main
+
 
 Ao final, o relatório é gerado em `data/output/relatorio_final.xlsx`, e o log da execução fica disponível em `logs/AAAA-MM-DD.log`.
 
