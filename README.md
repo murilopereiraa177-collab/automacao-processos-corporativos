@@ -41,6 +41,7 @@ Todas as etapas são registradas em log (`logs/`), com nível de severidade apro
 
 ## Arquitetura e fluxo
 
+```
 Planilha (Excel)
 │
 ▼
@@ -57,10 +58,12 @@ Cadastro automático (Selenium + Flask)
 │
 ▼
 Relatório final (Excel)
+```
 
 
 ## Estrutura de pastas
 
+```
 ProjetoRPA/
 ├── data/
 │ ├── input/ # Planilha de entrada (dados fictícios)
@@ -80,20 +83,25 @@ ProjetoRPA/
 ├── requirements.txt
 ├── main.py # Ponto de entrada — executa o fluxo completo
 └── README.md
+```
 
 
 ## Como instalar e configurar
 
 1. Clone o repositório e entre na pasta:
 
+```
 git clone https://github.com/murilopereiraa177-collab/automacao-processos-corporativos.git
 cd automacao-processos-corporativos
+```
 
 
 2. Crie e ative um ambiente virtual:
 
+```
 python -m venv venv
 venv\Scripts\activate
+```
 
 
 3. Instale as dependências:
