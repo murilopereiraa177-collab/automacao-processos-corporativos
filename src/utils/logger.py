@@ -29,7 +29,7 @@ def configurar_logger(nome_modulo):
         handler_arquivo = logging.FileHandler(nome_arquivo, encoding="utf-8")
         handler_arquivo.setFormatter(formato)
 
-        # Handler que mostra no terminal também
+
         handler_terminal = logging.StreamHandler()
         handler_terminal.setFormatter(formato)
 

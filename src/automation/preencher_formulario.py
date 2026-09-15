@@ -47,7 +47,7 @@ def preencher_formulario(fornecedor):
         return False
 
     finally:
-        time.sleep(2)  # deixa a tela visível um pouco antes de fechar
+        time.sleep(2)
         driver.quit()
 
 

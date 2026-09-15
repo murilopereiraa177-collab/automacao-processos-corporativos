@@ -21,7 +21,6 @@ def criar_banco_e_tabela():
     cursor.close()
     conexao.close()
 
-    # Agora conecta já usando o banco criado, para criar a tabela
     conexao = obter_conexao(usar_banco=True)
     cursor = conexao.cursor()
 
